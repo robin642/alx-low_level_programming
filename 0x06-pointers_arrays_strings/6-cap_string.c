@@ -12,10 +12,10 @@ char *cap_string(char *s)
 {
 		int caps = 0;
 
-		while (s[caps])
+		while (s[caps] != '\0')
 		{
 
-			if (!=(s[caps] >= 'a' && s[caps] <= 'z'))
+			if (s[caps] >= 97 && s[caps] <= 122)
 
 				caps++;
 

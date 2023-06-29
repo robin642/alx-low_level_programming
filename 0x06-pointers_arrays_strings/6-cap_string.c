@@ -7,36 +7,36 @@
   * Return: Pointer changed string (str)
   */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 
 {
 		int caps = 0;
 
-		while (str[caps])
+		while (s[caps])
 		{
 
-			while (!(str[caps] >= 'a' && str[caps] <= 'z'))
+			if (!=(s[caps] >= 'a' && s[caps] <= 'z'))
 
 				caps++;
 
 
-				if (str[caps - 1] == ' ' ||
-				str[caps - 1] == '\t' ||
-				str[caps - 1] == '\n' ||
-				str[caps - 1] == '.' ||
-				str[caps - 1] == ';' ||
-				str[caps - 1] == ',' ||
-				str[caps - 1] == '!' ||
-				str[caps - 1] == '?' ||
-				str[caps - 1] == '"' ||
-				str[caps - 1] == '(' ||
-				str[caps - 1] == ')' ||
-				str[caps - 1] == '{' ||
-				str[caps - 1] == '}' ||
+				if (s[caps - 1] == ' ' ||
+				s[caps - 1] == '\t' ||
+				s[caps - 1] == '\n' ||
+				s[caps - 1] == '.' ||
+				s[caps - 1] == ';' ||
+				s[caps - 1] == ',' ||
+				s[caps - 1] == '!' ||
+				s[caps - 1] == '?' ||
+				s[caps - 1] == '"' ||
+				s[caps - 1] == '(' ||
+				s[caps - 1] == ')' ||
+				s[caps - 1] == '{' ||
+				s[caps - 1] == '}' ||
 				caps == 0)
-					str[caps] -= 32;
+					s[caps] -= 32;
 
 					caps++;
 		}
-					return (str);
+					return (s);
 }

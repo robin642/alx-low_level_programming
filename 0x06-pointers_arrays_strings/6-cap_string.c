@@ -35,7 +35,7 @@ char *cap_string(char *r)
 				r[caps_lize]	== '{' ||
 				r[caps_lize] == '}')
 			{
-				if (r[cap_lize + 1] >= 97 && r[caps_lize + 1] <= 122)
+				if (r[caps_lize + 1] >= 97 && r[caps_lize + 1] <= 122)
 				{
 					r[caps_lize + 1] = r[caps_lize + 1] - 32;
 				}

@@ -20,19 +20,19 @@ char *cap_string(char *s)
 				caps++;
 
 
-				if (s[caps - 1] == ' ' ||
-				s[caps - 1] == '\t' ||
-				s[caps - 1] == '\n' ||
-				s[caps - 1] == '.' ||
-				s[caps - 1] == ';' ||
-				s[caps - 1] == ',' ||
-				s[caps - 1] == '!' ||
-				s[caps - 1] == '?' ||
-				s[caps - 1] == '"' ||
-				s[caps - 1] == '(' ||
-				s[caps - 1] == ')' ||
-				s[caps - 1] == '{' ||
-				s[caps - 1] == '}' ||
+				if (s[caps + 1] == ' ' ||
+				s[caps + 1] == '\t' ||
+				s[caps + 1] == '\n' ||
+				s[caps + 1] == '.' ||
+				s[caps + 1] == ';' ||
+				s[caps + 1] == ',' ||
+				s[caps + 1] == '!' ||
+				s[caps + 1] == '?' ||
+				s[caps + 1] == '"' ||
+				s[caps + 1] == '(' ||
+				s[caps + 1] == ')' ||
+				s[caps + 1] == '{' ||
+				s[caps + 1] == '}' ||
 				caps == 0)
 					s[caps] -= 32;
 

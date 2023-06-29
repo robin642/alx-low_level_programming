@@ -14,7 +14,7 @@ char *cap_string(char *str)
 		while (str[caps])
 		{
 
-			while (!(str[0] >= 'a' && str[0] <= 'z'))
+			while (!(str[caps] >= 'a' && str[caps] <= 'z'))
 
 				caps++;
 

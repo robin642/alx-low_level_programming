@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 
 /**
   * cap_string - Write a function that capitalizes all words of a string
@@ -9,36 +11,36 @@
 char *cap_string(char *r)
 
 {
-		int caps;
+		int caps_lize;
 
-		caps = 0;
-		while (r[caps] != '\0')
+		caps_lize = 0;
+		while (r[caps_lize] != '\0')
 		{
 			if (r[0] >= 97 && r[0] <= 122)
 			{
 				r[0] = r[0] - 32;
 			}
 
-				if (r[caps] == ' ' ||
-				r[caps] == '\t' ||
-				r[caps] == '\n' ||
-				r[caps] == ',' ||
-				r[caps] == ';' ||
-				r[caps] == '.' ||
-				r[caps] == '!' ||
-				r[caps] == '?' ||
-				r[caps] == '"' ||
-				r[caps] == '(' ||
-				r[caps] == ')' ||
-				r(caps)	== '{' ||
-				r[caps] == '}')
+				if (r[caps_lize] == ' ' ||
+				r[caps_lize] == '\t' ||
+				r[caps_lize] == '\n' ||
+				r[caps_lize] == ',' ||
+				r[caps_lize] == ';' ||
+				r[caps_lize] == '.' ||
+				r[caps_lize] == '!' ||
+				r[caps_lize] == '?' ||
+				r[caps_lize] == '"' ||
+				r[caps_lize] == '(' ||
+				r[caps_lize] == ')' ||
+				r[caps_lize]	== '{' ||
+				r[caps_lize] == '}')
 			{
-				if (r[caps + 1] >= 97 && r[caps + 1] <= 122)
+				if (r[cap_lize + 1] >= 97 && r[caps_lize + 1] <= 122)
 				{
-					r[caps + 1] = r[caps + 1] - 32;
+					r[caps_lize + 1] = r[caps_lize + 1] - 32;
 				}
 			}
-					caps++;
+					caps_lize++;
 		}
 					return (r);
 }

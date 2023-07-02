@@ -2,24 +2,24 @@
 
 /**
  * print_number - Write a function that prints an integer
- * @n: integer to be printed;
+ * @n: integer to be printed
+ * Return: 0
  */
 
 void print_number(int n)
 
 {
-	unsigned int r;
+	unsigned int n1;
 
-	r = n;
-
+	n1 = n;
 	if (n < 0)
 	{
-		r = -n;
+		n1 = -n;
 		_putchar('-');
 	} 
-	if (r / 10 != 0)
+	if (n1 / 10 != 0)
 	{
-		print_number(r / 10);
+		print_number(n1 / 10);
 	}
-		_putchar((r % 10) + '0');
+		_putchar((n1 % 10) + '0');
 }

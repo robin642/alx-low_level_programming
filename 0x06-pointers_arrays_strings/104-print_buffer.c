@@ -2,6 +2,37 @@
 #include <stdio.h>
 
 /**
+ * print_line - prints a s bytes of a buffer
+ * @c: buffer to print
+ * @s: bytes of buffer to print
+ * @l: line of buffer to print
+ *
+ * Return: void
+ */
+
+void print_line(char *c, int s, int l)
+
+{
+		int r, w;
+			for (r = 0; r <= 9; r++)
+			{
+			if (r <= s)
+				printf("%02x", c[l * 10 + r]);
+			else
+				printf("  ");
+			if (r % 2)
+				putchar(' ');
+			}
+			for (w = 0; w <= s; w++)
+			{
+			if (c[l * 10 + w] > 31 && c[l * 10 + w] < 127)
+				putchar(c[l * 10 + w]);
+			else
+				putchar('.');
+			}
+}
+
+/**
  * print_buffer - prints a buffer
  * @b: buffer to print
  * @size: size of buffer

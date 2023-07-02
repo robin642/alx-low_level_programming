@@ -1,14 +1,29 @@
 #include "main.h"
 
 /**
-  * rot13 - Write a function that encodes a string using rot13
-  * @rob -The string targeted
-  * Return: The encoded string (rob)
-  */
-
-char *rot13(char *)
-
+ * rot13 - Write a function that encodes a string using rot13
+ * @s: string to be encoded
+ *
+ * Return: the resulting string
+ */
+char *rot13(char *s)
 {
-		int robin1, robin2;
+	int r, w;
 
-		char Alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',					'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',					'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',						'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',						'v', 'w', 'x', 'y', 'z'};
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (r = 0; s[r] != '\0'; r++)
+	{
+		for (w = 0; a[w] != '\0'; r++)
+		{
+			if (s[r] == a[w])
+			{
+				s[r] = b[w];
+				break;
+			}
+		}
+	}
+
+	return (s);
+}

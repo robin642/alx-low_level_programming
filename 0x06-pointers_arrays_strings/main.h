@@ -2,7 +2,10 @@
 #ifndef MAIN_H
 
 #include <stdio.h>
+#include <string.h>
 
+void putchar_many(int n);
+void rev_string(char *n);
 void print_buffer(char *b, int size);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 void print_number(int n);

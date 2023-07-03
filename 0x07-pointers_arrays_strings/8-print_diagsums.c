@@ -11,18 +11,15 @@
 void print_diagsums(int *a, int size)
 
 {
-		int robin, add1 = 0, add2 = 0;
+		int r, w, add1 = 0, add2 = 0;
 
-		for (robin = 0; robin < size; robin++)
-		{
-			add1 += a[robin];
-			a += size;
+		for (r = 0; r <= (size * size); r = r + size + 1)
+		{	
+			add1 = add1 + a[r];
 		}
-
-		for (robin = 0; robin < size; robin++)
+		for (w = size - 1; w <= (size * size) - size; w = w + size - 1)
 		{
-			add2 += a[robin];
-			a -= size;
+			add2 = add2 + a[w];
 		}
-			_putchar("%d, %d\n", add1, add2);
+			printf("%d, %d\n", add1, add2);
 }

@@ -26,5 +26,5 @@ void print_diagsums(int *a, int size)
 			sum2 += a[robin];
 			a -= size;
 		}
-			printf("%d, %d\n", sum3, sum4);
+			_putchar("%d, %d\n", sum3, sum4);
 }

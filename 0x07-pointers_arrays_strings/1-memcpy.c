@@ -2,9 +2,9 @@
 
 /**
   * _memcpy - Write a function that copies memory area
-  * @dest - The memory is stored
-  * @src - The memory is copied
-  * @n - The number of bytes
+  * @dest: The memory is stored
+  * @src: The memory is copied
+  * @n: The number of bytes
   * Return: The copied memory with n byte changed
   */
 

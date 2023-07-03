@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-  * _strpbrk - Write a function that searches a string for any of a set of bytes
-  * @s: The input
-  * @accept: The input
+  * _strpbrk - Function that searches a string for any of a set of bytes
+  * @s: Input
+  * @accept: Input
   * Return: Always 0 (Success)
   */
 

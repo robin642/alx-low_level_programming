@@ -11,20 +11,18 @@
 void print_diagsums(int *a, int size)
 
 {
-		int robin, sum3 = 0, sum4 = 0;
+		int robin, add1 = 0, add2 = 0;
 
 		for (robin = 0; robin < size; robin++)
 		{
-			sum3 += a[robin];
+			add1 += a[robin];
 			a += size;
 		}
 
-		a -= size;
-
 		for (robin = 0; robin < size; robin++)
 		{
-			sum4 += a[robin];
+			add2 += a[robin];
 			a -= size;
 		}
-			_putchar("%d, %d\n", sum3, sum4);
+			_putchar("%d, %d\n", add1, add2);
 }

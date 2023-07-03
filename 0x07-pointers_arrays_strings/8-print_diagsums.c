@@ -23,7 +23,7 @@ void print_diagsums(int *a, int size)
 
 		for (robin = 0; robin < size; robin++)
 		{
-			sum2 += a[robin];
+			sum4 += a[robin];
 			a -= size;
 		}
 			_putchar("%d, %d\n", sum3, sum4);

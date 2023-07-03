@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * print_number - Write a function that prints an integer
@@ -17,10 +17,10 @@ void print_number(int n)
 	if (n < 0)
 	{
 		s2 = -n;
-		putchar('-');
+		_putchar('-');
 	}
 
-	if (s2 / 10 != 0)
+	if (s2 / 10)
 	{
 		print_number(s2 / 10);
 	}

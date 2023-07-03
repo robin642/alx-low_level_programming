@@ -2,28 +2,29 @@
 #include <stdio.h>
 
 /**
-  * Write a function that prints the sum of the two diagonals of a square matrix of integers
+  * print_diagsums - sum of the two diagonals of a square matrix of integers
   * @a: The input
   * @size: The input
-  * Return: Always 0 (Success)
+  * Return: 0
   */
 
 void print_diagsums(int *a, int size)
 
 {
-		int sum3, sum4, w;
+		int robin, sum3 = 0, sum4 = 0;
 
-		sum3 = 0;
-		sum4 = 0;
-
-		for (w = 0; w < size; w++)
+		for (robin = 0; robin < size; robin++)
 		{
-			sum3 = sum3 + a[w * size + w];
+			sum3 += a[robin];
+			a += size;
 		}
 
-		for (w = size - 1; w >= 0; w--)
+		a -= size;
+
+		for (robin = 0; robin < size; robin--)
 		{
-			sum2 += a[w * size + (size - w - 1)];
+			sum2 += a[robin];
+			a -= size;
 		}
 			printf("%d, %d\n", sum3, sum4);
 }

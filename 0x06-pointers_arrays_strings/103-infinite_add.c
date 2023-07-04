@@ -9,6 +9,7 @@
  * Return: 0
  */
 
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
 void rev_string(char *n)
 {
 	int d = 0;
@@ -37,7 +38,7 @@ void rev_string(char *n)
  * @size_r: buffer size
  * Return: pointer to calling function
  */
-
+void rev_string(char *n);
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int overflow = 0, d = 0, w = 0, digits = 0;

@@ -1,7 +1,6 @@
 #include "main.h"
 #include <unistd.h>
-#include <stdio.h>
-#include <string.h>
+
 /**
  * print_number - print numbers chars
  * @n: integer params

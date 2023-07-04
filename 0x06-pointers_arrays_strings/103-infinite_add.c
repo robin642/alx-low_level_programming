@@ -1,4 +1,7 @@
 #include "main.h"
+#include <string.h>
+#include <stdio.h>
+#include <unistd.h>
 
 /**
  * rev_string - reverse array

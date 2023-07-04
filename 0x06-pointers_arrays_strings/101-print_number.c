@@ -23,6 +23,6 @@ void print_number(int n)
 	{
 		print_number(sum1 / 10);
 	}
-	_putchar((sum1 % 10) + '0');
+		_putchar((sum1 % 10) + '0');
+	
 }
-

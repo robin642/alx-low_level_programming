@@ -1,12 +1,13 @@
 #include "main.h"
 #include <unistd.h>
-
+#include <stdio.h>
+#include <string.h>
 /**
  * print_number - print numbers chars
  * @n: integer params
  * Return: 0
  */
-
+int _putchar(char c);
 void print_number(int n)
 {
 	unsigned int sum1;

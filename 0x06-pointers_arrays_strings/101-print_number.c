@@ -6,7 +6,7 @@
  * @n: integer params
  * Return: 0
  */
-int _putchar(char c);
+
 void print_number(int n)
 {
 	unsigned int sum1;
@@ -24,5 +24,5 @@ void print_number(int n)
 		print_number(sum1 / 10);
 	}
 		_putchar((sum1 % 10) + '0');
-	
+
 }

@@ -1,10 +1,10 @@
-#define MAIN_H
 #ifndef MAIN_H
+#define MAIN_H
 
 #include <unistd.h>
 #include <stdio.h>
-#include <string.h>
 
+char *strcpy(char *destination, const char* source);
 void putchar_many(int n);
 void rev_string(char *n);
 void print_buffer(char *b, int size);

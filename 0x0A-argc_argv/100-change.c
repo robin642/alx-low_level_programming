@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 {
 		int number, r, answer;
-		int money[] = {100, 75, 40, 15, 3};
+		int money[] = {25, 10, 5, 2, 1};
 
 		if (argc != 2)
 		{

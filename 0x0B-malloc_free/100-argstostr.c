@@ -21,13 +21,13 @@ char *argstostr(int ac, char **av)
 
 		for (d = 0; d < ac; d++)
 		{
-			for (w = 0; av[d][w]; d++)
+			for (w = 0; av[d][w]; w++)
 				b++;
 		}
 				b += ac;
 
 		string = malloc(sizeof(char) * b + 1);
-		
+
 		if (string == NULL)
 			return (NULL);
 

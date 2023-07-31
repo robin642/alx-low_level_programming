@@ -1,6 +1,4 @@
-#include <stdio.h>
 #include "lists.h"
-#include <stdlib.h>
 
 /**
  * print_listint - The singly linked list
@@ -11,15 +9,14 @@
 size_t print_listint(const listint_t *h)
 
 {
-		size_t amount = 0;
+		size_t add = 0;
 
 		while (h)
 		{
 			printf("%d\n", h->n);
+			add++;
 			h = h->next;
-
-			amount++;
 		}
 
-		return (amount);
+		return (add);
 }

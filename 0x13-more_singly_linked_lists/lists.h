@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
-
+#include <stdlib.h>
 
 /**
  * struct listint_s - The singly linked list

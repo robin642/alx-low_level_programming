@@ -58,22 +58,29 @@ size_t looped_listint_len(const listint_t *head)
 size_t print_listint_safe(const listint_t *head)
 
 {
-		size_t sum = 0;
-		long int change;
+	size_t counts, amount = 0;
 
-		while (head)
+	counts = looped_listint_len(head);
+
+	if (counts == 0)
+	{
+		for (; head != NULL; amount++)
 		{
-			change = head - head->next;
-			sum++;
 			printf("[%p] %d\n", (void *)head, head->n);
-			if (change > 0)
-				head = head->next;
-			else
-			{
-				printf("-> [%p] %d\n", (void *)head->next, head->next->n);
-				break;
-			}
+			head = head->next;
+		}
+	}
+
+	else
+	{
+		for (amount = 0; amount < counts; amount++)
+		{
+			printf("[%p] %d\n", (void *)head, head->n);
+			head = head->next;
 		}
 
-		return (sum);
+		printf("-> [%p] %d\n", (void *)head, head->n);
+	}
+
+	return (counts);
 }

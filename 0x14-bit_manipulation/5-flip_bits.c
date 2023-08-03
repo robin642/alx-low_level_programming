@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-  * count_set_bits - The bits you would need to flip
+  * flip_bits - The bits you would need to flip
   * @n: The first no
   * @m: The 2nd no
   * Return: The number of bits

@@ -10,7 +10,7 @@
 void print_binary(unsigned long int n)
 
 {
-		int w = 0; 
+		int w = 0;
 		int amount = 0;
 		unsigned long int robin;
 

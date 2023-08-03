@@ -11,14 +11,11 @@
 int set_bit(unsigned long int *n, unsigned int index)
 
 {
-		unsigned long int robin = 1UL << index;
+		if (index > 63)
 
-		*n |= robin;
-
-		if (index >= sizeof(unsigned long int) * 8)
-		{
 			return (-1);
-		}
 
-		return (1);
+		*n = ((1UL << index) | *n);
+
+				return (1);
 }

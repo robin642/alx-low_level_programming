@@ -30,7 +30,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		}
 
 		p = open(filename, O_WRONLY | O_APPEND);
-		
+
 		pages = (write(p, text_content, answer) < 0);
 
 		if (p == -1 || pages == -1)

@@ -33,7 +33,7 @@ void empty_page(int ans)
 		die = close(ans);
 		if (die == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't close ans %d\n", ans);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", ans);
 			exit(100);
 		}
 }

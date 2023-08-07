@@ -25,9 +25,9 @@ int append_text_to_file(const char *filename, char *text_content)
 				answer++;
 		}
 
-		pages = write(p, text_content, answer);
-
 		p = open(filename, O_WRONLY | O_APPEND);
+		
+		pages = write(p, text_content, answer);
 
 		if (p == -1 || pages == -1)
 

@@ -24,11 +24,11 @@ int create_file(const char *filename, char *text_content)
 		if (text_content != NULL)
 		{
 			for (answer = 0; text_content[answer];)
-			
+
 				answer++;
 		}
 
-		pages = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+		pages = (open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600) < 0);
 
 
 		if (pages == -1 || p == -1)
